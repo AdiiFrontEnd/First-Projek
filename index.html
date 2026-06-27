@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowly Portfolio - Creative Professional</title>
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Boxicons for Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #1a191d;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+        .bento-card {
+            border-radius: 2rem;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bento-card:hover {
+            transform: translateY(-5px);
+            filter: brightness(1.1);
+        }
+        .bg-purple-main { background-color: #8b5cf6; }
+        .bg-yellow-main { background-color: #facc15; }
+        .bg-mint-main { background-color: #bbf7d0; }
+        .bg-cream-main { background-color: #fdf2d0; }
+        .bg-dark-card { background-color: #262529; border: 1px solid #3f3f46; }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1a191d; }
+        ::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 10px; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- NAVIGATION -->
+    <header class="max-w-7xl mx-auto px-6 py-8 flex justify-between items-center sticky top-0 z-50 bg-[#1a191d]/80 backdrop-blur-md">
+        <div class="flex items-center gap-2">
+            <div class="w-10 h-10 bg-gradient-to-br from-yellow-400 via-purple-500 to-green-400 rounded-xl flex items-center justify-center">
+                <i class='bx bxs-component text-white text-xl'></i>
+            </div>
+            <span class="font-extrabold text-2xl tracking-tighter uppercase">Portofolio</span>
+        </div>
+        <nav class="hidden md:flex gap-10 text-sm font-bold text-gray-400 uppercase tracking-widest">
+            <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+            <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+            <a href="#about" class="hover:text-white transition-colors">Process</a>
+            <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+        </nav>
+        <button class="bg-[#8b5cf6] px-6 py-3 rounded-2xl font-extrabold text-sm hover:shadow-[0_0_20px_rgba(139,92,246,0.4)] transition-all">
+            Rekrut Saya !!
+        </button>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="max-w-7xl mx-auto px-6 pt-12 pb-24 text-center">
+        <h1 class="text-6xl md:text-[100px] font-extrabold leading-[0.9] tracking-tighter mb-8">
+            Hi . I'm
+            <span class="inline-flex items-center px-10 py-5 bg-purple-main rounded-sm align-middle mx-2">
+                <i class='bx bxs-star text-4xl text-white animate-spin-slow'></i>
+                <i class='bx bxs-bolt text-4xl ml-2'></i>
+            </span>
+            Adii .S <br>
+            <span class="inline-flex items-center px-4 py-2 bg-mint-main rounded-2xl align-middle mx-2">
+                <i class='bx bxs-layer text-3xl text-black'></i>
+            </span>
+            I Am 
+            <span class="inline-flex items-center px-8 py-3 bg-yellow-main rounded-3xl align-middle mx-2">
+                <div class="w-8 h-8 border-4 border-black rounded-full border-t-transparent animate-spin"></div>
+            </span>
+            Learner
+        </h1>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg font-medium leading-relaxed">
+            Growing Every Day Is Better Than Not <br>
+            Focused on building the future of professional skills.
+        </p>
+    </section>
+
+    <!-- MAIN BENTO GRID (SKILLS FOCUS) -->
+    <main id="skills" class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-5 mb-24">
+        
+        <!-- Skill Card 1 -->
+        <div class="md:col-span-4 bento-card bg-cream-main p-8 text-black flex flex-col justify-between min-h-[300px]">
+            <div class="flex justify-between items-start">
+                <div class="bg-black/10 p-3 rounded-2xl"><i class='bx bxl-figma text-4xl'></i></div>
+                <span class="text-xs font-black uppercase tracking-[0.2em] opacity-40">UI/UX Design</span>
+            </div>
+            <div>
+                <h3 class="text-4xl font-extrabold tracking-tighter leading-none mb-4">Visual Storytelling</h3>
+                <p class="font-bold opacity-70">Creating high-fidelity prototypes and design systems.</p>
+            </div>
+        </div>
+
+        <!-- Tech Stack Card -->
+        <div class="md:col-span-5 bento-card bg-dark-card p-8 flex flex-col justify-between min-h-[300px]">
+            <div class="flex flex-wrap gap-3">
+                <span class="px-4 py-2 bg-purple-main/20 border border-purple-500/30 rounded-xl text-sm font-bold">React.js</span>
+                <span class="px-4 py-2 bg-yellow-main/20 border border-yellow-500/30 rounded-xl text-sm font-bold text-yellow-500">Tailwind</span>
+                <span class="px-4 py-2 bg-mint-main/20 border border-mint-500/30 rounded-xl text-sm font-bold text-green-400">Node.js</span>
+                <span class="px-4 py-2 bg-white/10 border border-white/20 rounded-xl text-sm font-bold">TypeScript</span>
+            </div>
+            <div>
+                <h3 class="text-4xl font-extrabold tracking-tighter leading-none mb-2">Modern Stack</h3>
+                <p class="text-gray-400 font-medium">Robust and scalable web applications.</p>
+            </div>
+        </div>
+
+        <!-- Experience Card -->
+        <div class="md:col-span-3 bento-card bg-purple-main p-8 flex flex-col justify-between min-h-[300px]">
+            <div class="flex -space-x-3">
+                <img src="https://i.pravatar.cc/150?u=1" class="w-12 h-12 rounded-full border-4 border-purple-600">
+                <img src="https://i.pravatar.cc/150?u=2" class="w-12 h-12 rounded-full border-4 border-purple-600">
+                <img src="https://i.pravatar.cc/150?u=3" class="w-12 h-12 rounded-full border-4 border-purple-600">
+            </div>
+            <div>
+                <h3 class="text-5xl font-black tracking-tighter">100+</h3>
+                <p class="text-xs font-black uppercase tracking-[0.2em] mt-2 opacity-80">Projects Completed</p>
+            </div>
+        </div>
+
+        <!-- Full Width Skill Badge -->
+        <div class="md:col-span-12 bento-card bg-yellow-main p-12 text-black flex flex-col md:flex-row items-center justify-between gap-8">
+            <h3 class="text-5xl md:text-7xl font-black tracking-tighter text-center md:text-left leading-none uppercase">
+                Competitive <br> Advantage
+            </h3>
+            <div class="flex flex-col gap-4 text-right">
+                <div class="flex items-center gap-4 justify-end">
+                    <span class="font-bold uppercase tracking-widest">Innovation</span>
+                    <div class="w-12 h-[2px] bg-black"></div>
+                </div>
+                <div class="flex items-center gap-4 justify-end">
+                    <span class="font-bold uppercase tracking-widest">Scalability</span>
+                    <div class="w-12 h-[2px] bg-black"></div>
+                </div>
+                <div class="flex items-center gap-4 justify-end">
+                    <span class="font-bold uppercase tracking-widest">Efficiency</span>
+                    <div class="w-12 h-[2px] bg-black"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- PROJECT ALBUM SECTION -->
+    <section id="projects" class="max-w-7xl mx-auto px-6 mb-24">
+        <div class="flex justify-between items-end mb-12">
+            <div>
+                <span class="text-purple-500 font-black uppercase tracking-[0.3em] text-sm">Selected Works</span>
+                <h2 class="text-5xl font-extrabold tracking-tighter mt-2">Project Album</h2>
+            </div>
+            <button class="hidden md:block bg-dark-card border border-gray-700 px-8 py-4 rounded-2xl font-bold hover:bg-gray-800 transition-all">
+                View All Projects <i class='bx bx-right-arrow-alt ml-2'></i>
+            </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Album Item 1 -->
+            <div class="group cursor-pointer">
+                <div class="relative aspect-square overflow-hidden rounded-[2.5rem] bg-dark-card mb-6">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=800&auto=format&fit=crop" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-8 flex items-end">
+                        <span class="bg-white text-black px-4 py-2 rounded-full text-xs font-bold uppercase">Case Study</span>
+                    </div>
+                </div>
+                <h4 class="text-2xl font-extrabold tracking-tight">FinTech App Design</h4>
+                <p class="text-gray-500 font-bold uppercase text-xs tracking-widest mt-1">Product Design • 2024</p>
+            </div>
+
+            <!-- Album Item 2 -->
+            <div class="group cursor-pointer">
+                <div class="relative aspect-square overflow-hidden rounded-[2.5rem] bg-dark-card mb-6">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-8 flex items-end">
+                        <span class="bg-mint-main text-black px-4 py-2 rounded-full text-xs font-bold uppercase">Live Site</span>
+                    </div>
+                </div>
+                <h4 class="text-2xl font-extrabold tracking-tight">AI Content Platform</h4>
+                <p class="text-gray-500 font-bold uppercase text-xs tracking-widest mt-1">Web Development • 2023</p>
+            </div>
+
+            <!-- Album Item 3 -->
+            <div class="group cursor-pointer">
+                <div class="relative aspect-square overflow-hidden rounded-[2.5rem] bg-dark-card mb-6">
+                    <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=800&auto=format&fit=crop" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-8 flex items-end">
+                        <span class="bg-yellow-main text-black px-4 py-2 rounded-full text-xs font-bold uppercase">Branding</span>
+                    </div>
+                </div>
+                <h4 class="text-2xl font-extrabold tracking-tight">Minimalist Portfolio</h4>
+                <p class="text-gray-500 font-bold uppercase text-xs tracking-widest mt-1">UI Design • 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="bg-[#111012] pt-24 pb-12 rounded-t-[4rem]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-24">
+                <div>
+                    <h2 class="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-8">
+                        Let's work <br> <span class="text-purple-500">Together</span>
+                    </h2>
+                    <p class="text-gray-400 text-xl font-medium max-w-md">
+                        Have a project in mind? Let's build something incredible.
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center items-start md:items-end gap-6">
+                    <a href="mailto:hello@knowly.com" class="text-3xl md:text-5xl font-bold tracking-tight hover:text-purple-500 transition-all border-b-4 border-purple-500 pb-2">
+                        hello@knowly.com
+                    </a>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-14 h-14 bg-dark-card rounded-2xl flex items-center justify-center text-2xl hover:bg-purple-main hover:text-white transition-all">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <a href="#" class="w-14 h-14 bg-dark-card rounded-2xl flex items-center justify-center text-2xl hover:bg-purple-main hover:text-white transition-all">
+                            <i class='bx bxl-dribbble'></i>
+                        </a>
+                        <a href="#" class="w-14 h-14 bg-dark-card rounded-2xl flex items-center justify-center text-2xl hover:bg-purple-main hover:text-white transition-all">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <div class="w-6 h-6 bg-purple-main rounded-md"></div>
+                    <span class="font-black tracking-tighter">KNOWLY © 2024</span>
+                </div>
+                <div class="flex gap-8 text-xs font-bold text-gray-500 uppercase tracking-widest">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                </div>
+                <p class="text-gray-500 text-xs font-bold uppercase tracking-widest">Designed by Knowly Team</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
